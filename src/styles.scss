@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
+@import 'variables';
+
+html, body, div, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    // background-color: $secondary-color;
+    background-image: url('https://img.wallpapic.es/i9758-323-327/medium/cielo-hermoso-nubes-naturaleza-luz-de-sol-fondo-de-pantalla.jpg');
+    background-size: cover;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $gray;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 50%;
+}
+
+/*utility creadas a modo bootstrap*/
+
+.width-33{
+    width: 33.33%;
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.px-auto{
+    padding-left: auto;
+    padding-right: auto;
+}
+.py-auto{
+    padding-top: auto;
+    padding-bottom: auto;
+}
+@media (max-width: 900px) {
+    .container {
+      width: 90%;
+    }
+  }
